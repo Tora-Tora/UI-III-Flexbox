@@ -49,7 +49,8 @@ table {
 
 /* Set every element's box-sizing to border-box */
 * {
-    box-sizing: border-box;
+	box-sizing: border-box;
+	
 }
 
 html, body {
@@ -64,3 +65,150 @@ h1, h2, h3, h4, h5 {
 }
 
 /* Copy and paste your work from yesterday here and start to refactor into flexbox */
+
+
+body {
+	width: 800px;
+	display: flex;
+	flex-direction: column;
+	margin: 10px 50px;
+	
+	
+}
+
+nav {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+a {
+	color: gray;
+	display: inline-block;
+	text-decoration: none;
+	box-sizing: border-box;
+	padding: 5px 10px;
+	margin: 0px 10px;
+}
+
+h1 {
+	font-size: 50px;
+}
+h2{
+	font-size: 30px;
+}
+
+.button {
+	color: black;
+	border: 1px solid black;
+	padding: 5px 20px;
+}
+.button2 {
+	color: gray;
+	border: 1px solid black;
+	padding: 5px 20px;
+	width: 120px;
+	border-radius: 7%;
+	text-align: center;
+}
+
+.section {
+	display: flex;
+}
+.section1 {
+	margin: 50px 0px;
+	display: flex;
+}
+.section1 div {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.innovation{
+	flex-direction: column;
+}
+
+.section2 {
+	border-top: 2px solid black;
+	justify-content: space-around;
+}
+
+
+.section3 {
+	border-bottom: 2px solid black;
+	justify-content: space-around;
+}
+
+.section4 {
+	flex-direction: column;
+	margin: 20px 0;
+	justify-content: space-around;
+	
+}
+
+.contact, .address, .phone_number, .email {
+	display: flex;
+	height: 40px;
+	/* border: 1px solid gray; */
+	align-items:center;
+}
+
+.copyright {
+	align-self: center;
+	margin: 20px;
+}
+.features, .about, .innovation, .circle_pic {
+	width: 49%;
+	/* display: inline-block; */
+}
+
+.services, .product, .vision {
+	width: 32%;
+	display: inline-block;
+}
+
+.features, .about, .services, .product, .vision {
+	margin: 30px 0;
+}
+
+.services_offered{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin: 30px 0;
+	padding: 30px 0;
+	border-top: 1px solid black;
+	border-bottom: 1px solid black;
+	
+}
+
+.digital_design, .ux_ui, .digital_marketing, .web_development, .ios_development, .android_development{
+	display: flex;
+	flex-direction: column;
+	width: 48%;
+	background-color:  #e0e0eb;
+	border: 1px solid black;
+	margin: 10px 0;
+	padding: 15px;
+	
+}
+
+.some_facts_about_us{
+	display: flex;
+	justify-content: space-between;
+}
+.some_facts{
+	flex-direction: column;
+	justify-content: flex-end;
+	width: 48%;
+}
+.services-info-img{
+	
+}
+ul {
+	list-style-type: square;
+	margin-top: 10px;	
+}
+li {
+	margin: 5px 0 0 20px;
+}
